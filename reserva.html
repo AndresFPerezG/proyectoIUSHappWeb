@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Reservas</title>
+
+    <style>
+        .header{
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+        .logo{
+            width: 6rem;
+        }
+        .lupa{
+            height: 25px
+        }
+        .link{
+            color: black;
+            text-decoration: none;
+        }
+        .link:hover{
+            color: #757e4d;
+        }
+        .cuadroTexto{
+            border-radius: 10px;
+        }
+
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #0f3921 ;
+            border-top: 2px solid darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+        <header class="sticky-top bg-white">
+            <nav class="header mb-2">           
+                <div class="d-flex flex-row justify-content-around flex-wrap">
+                    <div class="d-flex flex-column mx-2 my-md-2 my-sm-2 my-2 d-block">
+                        <a href="/index.html"><img src="/img/logo1_verde_pq.png" alt="Logo de Antioquia Travel" class="logo"></a>
+                    </div>
+                </div>
+              </nav>
+        </header>
+        
+        <section class="container">
+            <div class="row">
+                <div class="ps-5 mt-5 ms-md-5 col-12">
+                    <h1>¡Separa tu reserva!</h1>
+                    <br>
+                    <h3>Información de tu viaje</h3>
+                    <br>
+                    <h5>Fecha del viaje:</h5>
+                    <p>16/10/2021</p>
+                    <br>
+                    <h5>Número de huespedes</h5>
+                    <p>2 huespedes</p>
+                    <br>
+                    <hr>
+                    <h3>Información requerida para el viaje</h3>
+                    <ul>
+                        <li>La hora del check-in debe ser entre las 10 am y las 8 pm.</li>
+                        <li>Cualquier inquietud sobre normas del hospedaje comunicate con tu anfitrión.</li>
+                        <li>Si eres extranjero ten a la mano tu pasaporte</li>
+                        <li>Disfruta cada momento de tu estadía</li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <h3>Comunicate con tu anfitrión</h3>
+                    <p>Informale a tu anfitrión cuando llegas y las indicaciónes que necesitas para llegar satisfactoriamente a tu destino.</p>
+                    <br>
+                    <form action="#" method="post" class="d-flex mb-5">
+                        <textarea name="message" style="width: 70%; height: 100px;" class="cuadroTexto mx-3"></textarea>
+                        <input type="submit" value="Enviar" class="btn btn-dark mt-3 mb-3">
+                    </form>    
+                </div>
+
+                <div class="card col-12">
+                    <div class="card-header">
+                        <span><strong><h5>Reserva</h5></strong></span>
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Elige como quieres pagar</h5>
+                    <h6 class="card-title">Paga en efectivo</h6>
+                    <p class="card-text">Paga al momento de arrivar a tu destino.</p>
+                    <form action="#" method="post">
+                        <input type="radio" id="efectivo" name="pagos" value="Efectivo">
+                        <label for="efectivo">Efectivo</label><br><br>
+                        <h6 class="card-title">Tarjeta de crédito/Débito</h6>
+                        <p class="card-text">Paga desde la comodidas de tu hogar.</p>
+                        <input type="radio" id="efectivo" name="pagos" value="Efectivo">
+                        <label for="efectivo">Crédito/Débito</label><br>
+                    </form><br>
+                    <h3>Total reserva</h3>
+                    <span>$95.000/noche</span><br>
+                    <a href="#" class="btn btn-success mt-3">¡Reserva ahora!</a>
+                    <a href="#" class="btn btn-danger mt-3">Cancelar Reserva</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="container-fluid mt-5 footer">
+            <div class="row">
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="d-flex flex-column p-5 mt-5 text-white">
+                        <h5><strong>Contáctanos:</strong> </h5>
+                        <span><strong>Address:</strong> 123 W Jenkins ST</span>
+                        <span><strong>Email:</strong> admin@carvedrock.com</span>
+                        <span><strong>Phone:</strong> 555-555-555</span>
+                    </div>
+                    <a href="#"><img src="./img/Logo2_blanco_pq.png" alt="logo footer" class="img-fuid"></a>
+                </div>
+            </div>
+            <div class="row text-white text-center">
+                <p>Copyright 2021</p>
+                <br>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

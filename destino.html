@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Travel Antioquia</title>
+
+    <style>
+        .logo {
+            width: 6rem;
+        }
+
+        .buscador {
+            border: 1px solid #a0a87d;
+            border-radius: 20px;
+        }
+
+        .lupa {
+            height: 25px
+        }
+
+        .link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            color: #757e4d;
+        }
+
+        .banner {
+            background-image: url(./img/Destino1.jpg);
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+        }
+
+        .pueblos {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .anfitrion {
+            background-image: url(./img/turistico.jpg);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer {
+            width: 100%;
+            height: auto;
+            background-color: #0f3921;
+            border-top: 2px solid darkslategrey;
+        }
+
+        .sec_anf {
+            height: 500px;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        .color {
+            color: rgb(31, 197, 197);
+        }
+
+        #form {
+            width: 250px;
+            margin: 0 auto;
+            height: 50px;
+        }
+
+        #form p {
+            text-align: center;
+        }
+
+        #form label {
+            font-size: 20px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            color: grey;
+        }
+
+        .clasificacion {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        label:hover,
+        label:hover~label {
+            color: orange;
+        }
+
+        input[type="radio"]:checked~label {
+            color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="sticky-top bg-white">
+        <nav class="header mb-2">
+
+            <div class="d-flex flex-row justify-content-around flex-wrap">
+
+                <div class="d-flex flex-column mx-2 my-md-2 my-sm-2 my-2 d-sm-block d-none flex-fill">
+                    <a href="#"><img src="/img/logo1_verde.png" alt="Logo de Antioquia Travel" class="logo"></a>
+                </div>
+
+                <div class="d-flex flex-column p-4 mx-2 my-md-3 my-sm-2 my-2 d-md-block d-none text-end flex-fill">
+                    <a href="/anfitrion.html" class="link">¡Hazte Anfitrión!</a>
+                </div>
+
+                <div class="d-flex flex-column p-4 mx-2 my-md-2 my-md-2 my-sm-2 my-2 text-center flex-fill">
+                    <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="Busca un destino..."
+                            aria-label="Search">
+                        <button class="btn" type="submit"><img src="https://img.icons8.com/ios/50/000000/search--v1.png"
+                                class="lupa" /></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid">
+
+        <div class="d-flex banner mb-5"></div>
+    </section>
+
+
+    <section class="container-fluid">
+        <div class="centro">
+            <form>
+                <p class="clasificacion">
+                    <input id="radio1" type="radio" name="estrellas" value="5">
+                    <!--
+                      --><label for="radio1">★</label>
+                    <!--
+                      --><input id="radio2" type="radio" name="estrellas" value="4">
+                    <!--
+                      --><label for="radio2">★</label>
+                    <!--
+                      --><input id="radio3" type="radio" name="estrellas" value="3">
+                    <!--
+                      --><label for="radio3">★</label>
+                    <!--
+                      --><input id="radio4" type="radio" name="estrellas" value="2">
+                    <!--
+                      --><label for="radio4">★</label>
+                    <!--
+                      --><input id="radio5" type="radio" name="estrellas" value="1">
+                    <!--
+                      --><label for="radio5">★</label>
+                </p>
+            </form>
+            <h1 class="mb-5">HOTEL SANTAMARÍA DE LAS AGUAS </h1>
+        </div>
+
+        <div class="container-fluid row">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.830872526905!2d-75.1902377!3d6.2031919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95d184b26989e0cb!2sHotel%20Santa%20Maria%20de%20las%20Aguas!5e0!3m2!1ses-419!2sco!4v1631050593261!5m2!1ses-419!2sco"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <div class="centro  my-5">
+        <a href="/reserva.html" class="link"><button type="button" class="btn btn-primary btn-lg btn-block">RESERVAR UNA
+                HABITACIÓN</button></a>
+    </div>
+
+    <section class="container-fluid">
+        <h1 class="my-5 text-center">UN HERMOSO LUGAR PARA DESCANSAR</h1>
+
+        <div class="row">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img class="img-fluid" src="img/Paisaje.jpg" alt="..." width="100%" height="auto">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="img-fluid" src="img/Paisaje2.jpg" alt="..." width="100%" height="auto">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="img/Paisaje3.jpg" alt="..." width="100%" height="auto">
+                            
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container-fluid mt-5 footer">
+        <div class="row">
+            <div class="d-flex justify-content-around flex-wrap">
+                <div class="d-flex flex-column p-5 mt-5 text-white">
+                    <h5><strong>Contáctanos:</strong> </h5>
+                    <span><strong>Address:</strong> 123 W Jenkins ST</span>
+                    <span><strong>Email:</strong> admin@carvedrock.com</span>
+                    <span><strong>Phone:</strong> 555-555-555</span>
+                </div>
+                <a href="#"><img src="./img/Logo2_blanco_pq.png" alt="logo footer" class="img-fuid"></a>
+            </div>
+        </div>
+        <div class="row text-white text-center">
+            <p>Copyright 2021</p>
+            <br>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

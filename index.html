@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <title>Travel Antioquia</title>
+
+        <style>
+            
+            .logo{
+                width: 6rem;
+            }
+            .buscador{
+                border: 1px solid #a0a87d;
+                border-radius: 20px;
+            }
+            .lupa{
+                height: 25px
+            }
+            .link{
+                color: black;
+                text-decoration: none;
+            }
+            .link:hover{
+                color: #757e4d;
+            }
+
+            .banner{
+                background-image: url(./img/banner_esc.jpg);
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 15px;
+            }
+
+            .pueblos{
+                height: 150px;
+                width: 200px;
+                border-radius: 10px;
+            }
+
+            .anfitrion{
+                background-image: url(./img/anfitrion.jpg);
+                height: 400px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 15px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .footer{
+                width: 100%;
+                height: auto;
+                background-color: #0f3921 ;
+                border-top: 2px solid darkslategrey;
+            }
+            .sec_anf{
+                height: 500px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header class="sticky-top bg-white">
+            <nav class="header mb-2">
+                
+                <div class="d-flex flex-row justify-content-around flex-wrap">
+
+                        <div class="d-flex flex-column mx-2 my-md-2 my-sm-2 my-2 d-sm-block d-none flex-fill">
+                            <a href="#"><img src="/img/logo1_verde_pq.png" alt="Logo de Antioquia Travel" class="logo"></a>
+                        </div>
+    
+                        <div class="d-flex flex-column p-4 mx-2 my-md-3 my-sm-2 my-2 d-md-block d-none text-end flex-fill">
+                            <a href="/anfitrion.html" class="link">¡Hazte Anfitrión!</a>
+                        </div>
+                      
+                        <div class="d-flex flex-column p-4 mx-2 my-md-2 my-md-2 my-sm-2 my-2 text-center flex-fill">
+                            <form class="d-flex">
+                                <input class="form-control me-2 buscador" type="search" placeholder="Busca un destino..." aria-label="Search">
+                                <button class="btn" type="submit"><img src="https://img.icons8.com/ios/50/000000/search--v1.png" class="lupa"/></button>
+                              </form>
+                        </div>
+                    </div>
+              </nav>
+        </header>
+
+        <section class="container-fluid">
+            
+            <div class="d-flex banner mb-5"></div>
+        </section>
+
+        <section class="container-fluid">
+            <div>
+                <h1 class="mb-5">Descubre alojamientos en Antioquia</h1>
+            </div>
+            <div class="d-flex flex-row justify-content-around mt-5 p-2 flex-wrap">
+                <figure class="text-center">
+                    <a href="destino.html"> <img src="/img/guatape.png" alt="Guatapé Antioquia" class="pueblos"></a>
+                    <figcaption>Guatapé</figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <a href="destino.html"><img src="/img/jardin.jpeg" alt="Jardín Antioquia" class="pueblos link"></a>
+                    <figcaption>Jardín</figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <a href="destino.html"><img src="/img/jerico.jpg" alt="Jericó Antioquia" class="pueblos link"></a>
+                    <figcaption>Jericó</figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <a href="destino.html"><img src="/img/penol.jpeg" alt="El Peñol Antioquia" class="pueblos link"></a>
+                    <figcaption>El Peñol</figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <a href="destino.html"><img src="/img/santa-fe.jpg" alt="Santa Fé de Antioquia" class="pueblos link"></a>
+                    <figcaption>Santa Fé de Antioquia</figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <a href="destino.html"><img src="/img/san-rafael.jpg" alt="San Rafael Antioquia" class="pueblos link"></a>
+                    <figcaption>San Rafael</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="container-fluid sec_anf">
+            <h1 class="my-5">Conoce otras culturas y gana dinero en el camino</h1>
+            <a href="/anfitrion.html"><div class="d-flex anfitrion"></div></a>
+        </section>
+
+
+        <footer class="container-fluid mt-5 footer">
+            <div class="row">
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="d-flex flex-column p-5 mt-5 text-white">
+                        <h5><strong>Contáctanos:</strong> </h5>
+                        <span><strong>Address:</strong> 123 W Jenkins ST</span>
+                        <span><strong>Email:</strong> admin@carvedrock.com</span>
+                        <span><strong>Phone:</strong> 555-555-555</span>
+                    </div>
+                    <a href="#"><img src="./img/Logo2_blanco_pq.png" alt="logo footer" class="img-fuid"></a>
+                </div>
+            </div>
+            <div class="row text-white text-center">
+                <p>Copyright 2021</p>
+                <br>
+            </div>
+
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
