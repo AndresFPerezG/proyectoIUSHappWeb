@@ -1,92 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title>Anfitrion</title>
-
-    <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Recibe huéspedes en tu espacio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            .container {
+                background: rgb(255, 255, 255) !important;
+                visibility: visible !important;
+                top: 0px !important;
+                left: 0px !important;
+            }
+            .logo{
+                width: 6rem;
+            }
+            .link{
+                color: black;
+                text-decoration: none;
+            }
+            .link:hover{
+                color: #757e4d;
+            }
+            .barner{
+                height: 320px;
+                background-image: url('img/banner.jpg');
+                background-size: cover;
+                background-position: center -200px;
+            }
+            .caja {
+                background: #c6c9c7;
+                height: 620px;
+                visibility: visible;
+                color: black;
+            }
+            .footer{
+                background: #0f3921;
+                height: auto;
+                visibility: visible;
+            }
+        </style>
+        <header class="sticky-top bg-white">
+          <nav class="header mb-2">
+              <div class="d-flex flex-row justify-content-around flex-wrap"> 
+                <div class="d-flex flex-column mx-2 my-md-2 my-sm-2 my-2 d-sm-block d-none flex-fill">
+                  <a href="index.html"><img src="img/logo1_verde_pq.png" alt="Logo de Antioquia Travel" class="logo"></a>
+                </div>
+      
+                <div class="d-flex flex-column p-4 mx-2 my-md-3 my-sm-2 my-2 d-md-block d-none text-end flex-fill">
+                  <a href="registrar-hospedaje.html" class="link">¡Hazte Anfitrión!</a>
+                </div>
+              </div>
+          </nav>
+      </header>
+        <div class="d-flex barner"></div>
+        <div>
+            <section class="w3l-cta4 py-5">
+                <div class="container py-lg-5">
+                  <div class="ab-section text-center">
+                    <p class="fs-1 hny-title text-center"><h1>Brinda servicios de anfitrión</h1></p>
+                    <p class="fs-1 hny-title text-center"><h1>donde quieras, cuando quieras</h1></p>
+                  </div>
+                </div>
+                <div class="row mt-5">    
+                    <div class="d-flex px-5 flex-row my-3 justify-content-around flex-wrap">
+                        <div class="d-flex flex-fill flex-column p-2 mx-2 my-lg-1 text-center">
+                                <img src="/img/team1.jpg" alt="Jorge" class="img-fluid d-block mx-auto" width="300px" height="400px">
+                                <h3>Jorge</h3>
+                                <p>"Recibir huéspedes en mi casa me permitió emprender</p>
+                                <p>un negocio que me abrió las puertas a la</p>
+                                <p>libertad financiera"</p>
+                        </div>
             
-        .logo{
-            width: 6rem;
-        }
-        .buscador{
-            border: 1px solid #a0a87d;
-            border-radius: 20px;
-        }
-        .lupa{
-            height: 25px
-        }
-        .link{
-            color: black;
-            text-decoration: none;
-        }
-        .link:hover{
-            color: #757e4d;
-        }
-
-        .banner{
-            background-image: url(./img/banner_esc.jpg);
-            height: 300px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-        }
-
-        .pueblos{
-            height: 150px;
-            width: 200px;
-            border-radius: 10px;
-        }
-
-        .anfitrion{
-            background-image: url(./img/anfitrion.jpg);
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        .footer{
-            width: 100%;
-            height: auto;
-            background-color: #0f3921 ;
-            border-top: 2px solid darkslategrey;
-        }
-        .sec_anf{
-            height: 500px;
-        }
-    </style>
-</head>
-<body>
-    <header class="sticky-top bg-white">
-        <nav class="header mb-2">
+                        <div class="d-flex flex-fill flex-column p-2 mx-2 my-lg-1 text-center">
+                            <img src="/img/team3.jpg" alt="Carlos" class="img-fluid d-block mx-auto" width="300px" height="400px">
+                            <h3>Carlos</h3>
+                            <p>"Travel Antioquia ha permitido que el lugar donde</p>
+                            <p>vivo sea más reconocido por turistas</p>
+                            <p>locales e internacionales"</p>
+                        </div>
             
-            <div class="d-flex flex-row justify-content-around flex-wrap">
-
-                    <div class="d-flex flex-column mx-2 my-md-2 my-sm-2 my-2 d-sm-block d-none flex-fill">
-                        <a href="/index.html"><img src="/img/logo1_verde_pq.png" alt="Logo de Antioquia Travel" class="logo"></a>
-                    </div>
-
-                    <div class="d-flex flex-column p-4 mx-2 my-md-3 my-sm-2 my-2 d-md-block d-none text-end flex-fill">
-                        <a href="/anfitrion.html" class="link">¡Hazte Anfitrión!</a>
-                    </div>
-                  
-                    <div class="d-flex flex-column p-4 mx-2 my-md-2 my-md-2 my-sm-2 my-2 text-center flex-fill">
-                        <form class="d-flex">
-                            <input class="form-control me-2 buscador" type="search" placeholder="Busca un destino..." aria-label="Search">
-                            <button class="btn" type="submit"><img src="https://img.icons8.com/ios/50/000000/search--v1.png" class="lupa"/></button>
-                          </form>
+                        <div class="d-flex flex-fill flex-column p-2 mx-2 my-lg-1 text-center">
+                            <img src="/img/team4.jpg" alt="Maria F" class="img-fluid d-block mx-auto" width="300px" height="400px">
+                            <h3>Maria F</h3>
+                            <p>"Compartir mi hogar me ha permitido</p>
+                            <p>conocer personas maravillosas"</p>
+                        </div>
                     </div>
                 </div>
-          </nav>
-    </header>
-    <h1>PAGINA DEL ANFITRION</h1>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+            </section>
+        </div>
+        <div class="caja"> 
+          <div class="row mt-5"> 
+            <p></p>
+            <p class="fs-2 hny-title text-center text-dark">Animate a ser anfitrión</p>
+            <p class="fs-2 hny-title text-center text-dark">!Hazlo ahora!</p> 
+            <div class="d-flex flex-row justify-content-around flex-wrap">  
+                <div class="d-flex flex-fill flex-column p-2 mx-2 my-lg-1 text-center">
+                  <a class="navbar-brand text-center" href="registrar-hospedaje.html">
+                    <img src="/img/espacio.jpg" alt="Anuncia tu espacio" title="Anuncia tu espacio" width="500px" height="300px" class="img-fluid"/></a> 
+                  <p class="fs-3 hny-title text-center text-dark">Anuncia tu espacio</p> 
+                </div>
+            </div>
+          </div>
+        </div>
+        <footer class="container-fluid footer">
+            <div class="row">
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="d-flex flex-column p-5 mt-5 text-white">
+                        <h5><strong>Contáctanos:</strong> </h5>
+                        <span><strong>Address:</strong> 123 W Jenkins ST</span>
+                        <span><strong>Email:</strong> admin@carvedrock.com</span>
+                        <span><strong>Phone:</strong> 555-555-555</span>
+                    </div>
+                    <a href="index.html"><img src="./img/Logo2_blanco_pq.png" alt="logo footer" class="img-fuid"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-white text-center">
+                    <p>Copyright 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>
